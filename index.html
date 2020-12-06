@@ -165,7 +165,7 @@
         <h2 class="m-heading">Contact Me</h2>
         <a href = "mailto: barrocoeb@gmail">Send Email</a>
         <p>Or, please use the form below to contact me</p>
-        <form name="contact" netlify> 
+        <form name="contact" method="POST" data-netlify="true"> 
           <div class="form-group">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" placeholder="Enter Name" />
@@ -197,7 +197,7 @@
               placeholder="Enter your Message"
             ></textarea>
           </div>
-          <input type="submit" value="Send" class="btn btn-dark" />
+          <button type="submit" value="Submit">Send</button>  
         </form>
       </div>
       <div class="map"></div>
@@ -231,7 +231,15 @@
       integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
       crossorigin="anonymous"
     ></script>
+    <script>
 
+  function fun(){ 
+            document.getElementById('name').value=''; 
+            document.getElementById('email').value=''; 
+            document.getElementById('phone').value=''; 
+            document.getElementById('message').value=''; 
+            } 
+    </script>
     <!-- Local JS File -->
     <script src="js/main.js"></script>
   </body>
