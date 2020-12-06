@@ -18,6 +18,18 @@
 
 /* Smartphones */
 @media (max-width: 500px) {
+  .l-heading {
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .m-heading {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
   #navbar {
     flex-direction: column;
     align-items: center;
@@ -71,12 +83,12 @@
   }
 
   #project-projects {
-    height: 1300vw;
+    height: 1230vh;
   }
 
   /* Experience mobile */
   #project-experience {
-    height: 1750vw;
+    height: 2600vw;
   }
 
   .grid-experience {
@@ -90,7 +102,7 @@
   }
 
   #project-skills {
-    height: 740vw;
+    height: 620vh;
   }
 
   #project-skills .grid-skills .grid-item .skills-2 {
@@ -100,7 +112,7 @@
 
   /* About-me mobile */
   #project-about-me {
-    height: 320vh;
+    height: 490vh;
   }
 
   .about-me {

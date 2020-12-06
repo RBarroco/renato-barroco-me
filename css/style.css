@@ -247,21 +247,20 @@ ul {
   justify-content: space-between;
 }
 
-#project-structure,
 #project-about-me {
-  height: 80vw;
+  height: 130vw;
 }
 
 #project-skills {
-  height: 150vw;
+  height: 220vw;
 }
 
 #project-experience {
-  height: 160vw;
+  height: 240vw;
 }
 
 #project-projects {
-  height: 140vw;
+  height: 200vw;
 }
 
 #projects-viewport {
