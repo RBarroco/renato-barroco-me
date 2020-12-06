@@ -129,8 +129,9 @@ ul {
 }
 
 .btn-dark {
-  background: #333;
+  background: #444;
   color: #fff;
+  margin: 0.75rem;
 }
 
 .list {
