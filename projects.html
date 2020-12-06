@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 1100px)"
+      href="css/widescreen.css"
+    />
+    <title>
+      Renato Barroco | Data Science | Data Analyst | Business Intelligence
+    </title>
+  </head>
+  <body id="home">
+    <!-- Navbar -->
+    <nav id="navbar">
+      <h1 class="logo">
+        <img src="img/logo-renato-barroco.png" width="300" height="170" />
+      </h1>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./about-me.html">AboutMe</a></li>
+        <li><a href="./skills.html">Skills</a></li>
+        <li><a href="./experience.html">Experience</a></li>
+
+        <li><a href="./contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Header: Showcase -->
+
+    <section id="project-projects">
+      <h1 class="l-heading text-center">Projects</h1>
+      <br />
+      <!-- Project 1 -->
+      <div class="grid-experience">
+        <div class="grid-item">
+          <a
+            href="https://nbviewer.jupyter.org/github/RBarroco/ames-housing-renato-barroco/blob/master/ames-housing-renato-barroco.ipynb"
+            target="blank_"
+          >
+            <img class="experience-1" src="./img/Kaggle_logo.png" alt=""
+          /></a>
+        </div>
+
+        <div class="grid-item">
+          <h1>Ames House - Regression</h1>
+
+          <p>
+            The goal of this project was to apply Exploratory Data Analysis,
+            Features Engineering, and to use Regression in Machine Leaning
+            tools.
+          </p>
+          <ul>
+            <li>
+              <b>Dataset:</b> The dataset is the famous
+              <a
+                href="https://www.kaggle.com/prevek18/ames-housing-dataset"
+                target="blank_"
+                ><b>Ames Housing</b></a
+              >, which has 82 features (columns) and 2930 records (rows).
+            </li>
+
+            <li>
+              <b>Tools:</b>
+              <ul>
+                <li>
+                  1) Ridge Regression, K-Nearest Neighbors, Support Vector
+                  Regression, Decision Trees, Neural Networks, Random Forest,
+                  Gradient Boosting.
+                </li>
+
+                <li>
+                  2) A dicussion about standarization of data, in linear
+                  regression vs. more complex models.
+                </li>
+
+                <li>
+                  3) Polynomial features in different degree, and why to use
+                  them.
+                </li>
+                <li>4) Split data between training set and testing set.</li>
+                <li>
+                  5) Cross validation method, using different regressions
+                  methods inclusive: GridSearchCV, RandomizedSearchCV.
+                </li>
+                <li>
+                  6) Exploratory data analysis to find outliers, to understand
+                  strong vs. weak correlation between predictor variables
+                  themselves and between predictor variables vs. target
+                  variable.
+                </li>
+                <li>
+                  7) Feature Engineering (One hot Encode) based on categorical
+                  unordered, handling categorical ordered data through mapping
+                  technique, and handling 'NaN' data.
+                </li>
+                <li>
+                  8) Correlation matrix, heatmap of correlation matrix, overall
+                  multi- and uni-variate analysis.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="grid-item">
+          <br />
+          <a
+            href="https://nbviewer.jupyter.org/github/RBarroco/web-scrapping-indeed/blob/master/webscraping-indeed-15.ipynb"
+            target="blank_"
+          >
+            <img class="experience-1" src="./img/indeed-logo.png" alt=""
+          /></a>
+        </div>
+
+        <div class="grid-item">
+          <h1>Web Scrapping Indeed.com</h1>
+
+          <p>This is a project about web scrapping the website indeed.com</p>
+          <ul>
+            <li>
+              <b>Dataset:</b> I have chose 15 cities from the Linkedin best
+              cities to launch a career:
+
+              <a
+                href="https://www.linkedin.com/pulse/top-15-us-cities-launch-your-career-george-anders/"
+                target="blank_"
+                ><b>Linkedin 15 cities</b>.</a
+              >
+              I filtered my web scrapping based on Data Analyst positions in
+              these 15 cities.
+            </li>
+            <br />
+            <li>
+              <b>Tools:</b>
+              <ul>
+                <li>
+                  1) Libraries like Requests, BeautifulSoup, Pandas, Numpy,
+                  tqdm.
+                </li>
+
+                <li>
+                  2) Data Structures concepts, functional programming, error
+                  handling, data dimensions.
+                </li>
+
+                <li>3) Features Engineering, data wrangling.</li>
+                <li>4) Performance.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Project 3 -->
+        <div class="grid-item">
+          <br />
+          <a
+            href="https://nbviewer.jupyter.org/github/RBarroco/quandl-project-webapi-big-mac/blob/master/API-Quandl-Project.ipynb"
+            target="blank_"
+          >
+            <img
+              class="experience-1"
+              src="./img/quandl-logo-twitter.png"
+              alt=""
+          /></a>
+        </div>
+        <div class="grid-item">
+          <br />
+          <h1>Web API quandl.com</h1>
+
+          <p>
+            This is a project about web API of the website quandl.com, a
+            timeseries data, and Exploratory Data Analysis.
+          </p>
+          <ul>
+            <li>
+              <b>Dataset:</b>
+              I chose the Big Mac Index, because it is a great set of data to
+              explain the concept of purchasing power parity between countries
+              and the consequences of inflation in the day to day of our lives:
+
+              <a
+                href="https://www.quandl.com/data/ECONOMIST-The-Economist-Big-Mac-Index"
+                target="blank_"
+                ><b>Big Mac Index Data</b>.</a
+              >
+              I had to work on the data, because it's a type of series data and,
+              as usual, it is difficult to find for all countries, in all date
+              data. Which made the project so much more exciting because I had
+              to be creative. I'm planning to make an article out of this
+              project.
+            </li>
+            <ul></ul>
+            <br />
+            <li>
+              <b>Tools:</b>
+              <ul>
+                <li>
+                  1) Libraries like Requests, json, Pandas, Numpy, matplotlib,
+                  Seaborn, scipy, and relational database concepts.
+                </li>
+
+                <li>
+                  2) Data Structures concepts, functional programming, error
+                  handling.
+                </li>
+
+                <li>
+                  3) Features Engineering, data wrangling, timeseries data.
+                </li>
+                <li>
+                  4) Correlation, Correlation heatmap, uni-variate and
+                  multi-variate analysis.
+                </li>
+                <li>
+                  5) Insights from data, a creative approach towards finding
+                  better conclusions.
+                </li>
+                <li>
+                  6) Purchasing Power Parity, inflation, world currency system,
+                  interest rates, economics of real life.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- Project 5 -->
+        <div class="grid-item">
+          <br />
+          <a href="./Projects/finance/financial-planning.xls" target="blank_">
+            <img class="experience-1" src="./img/Tesla-Logo.jpg" alt=""
+          /></a>
+        </div>
+
+        <div class="grid-item">
+          <h1>Tesla Analysis - Finance</h1>
+
+          <p>
+            This is a project on building a 3-statement model for the Tesla
+            company.
+          </p>
+          <ul>
+            <li>
+              <b>Dataset:</b>
+              The main objective of this project was to practice a financial
+              analyst role. Here, I walked around the public SEC Fillings 10-Q
+              information and made many different assumptions in the macro and
+              micro economic level:
+
+              <a href="https://ir.tesla.com/sec-filings" target="blank_"
+                ><b>Tesla Investor Relationship</b>.</a
+              >
+            </li>
+            <ul>
+              <li>
+                <a
+                  href="./Projects/finance/TESLA-3-statement-model.pdf"
+                  target="blank_"
+                  ><b>Presentation (.pdf)</b>.</a
+                >
+              </li>
+              <li>
+                <a
+                  href="./Projects/finance/financial-planning.xls"
+                  target="blank_"
+                  ><b>Microsoft Excel file (.xls)</b>.</a
+                >
+              </li>
+            </ul>
+            <br />
+            <li>
+              <b>Tools:</b>
+              <ul>
+                <li>
+                  1) Microsoft Excel, VLOOKUP, CHOOSE, Pivot table, sensitivity
+                  analysis.
+                </li>
+
+                <li>
+                  2) Macroeconomics, Microeconomics, Finance and Accounting.
+                </li>
+
+                <li>
+                  3) Inflation, interest rates, currencies, beta, stocks
+                  pricing, CAPM, WACC.
+                </li>
+                <li>
+                  4) Cross-sectional analysis, KPIs, Working Capital analysis,
+                  Unlevered free cash flow.
+                </li>
+                <li>5) P&L, Balance Sheet and Cash Flow.</li>
+                <li>6) Flexible model analysis best, base and worst case.</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- end -->
+      </div>
+    </section>
+    <br />
+    <!-- Footer -->
+    <footer id="main-footer" class="bg-dark text-center py-1">
+      <div class="container">
+        <a
+          href="https://github.com/RBarroco"
+          target="_blank"
+          style="color: #e07451"
+          ><i class="fab fa-github fa-2x"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/renato-barroco/"
+          target="_blank"
+          style="color: #e07451"
+          ><i class="fab fa-linkedin fa-2x"></i
+        ></a>
+        <a
+          href="https://public.tableau.com/profile/rbarroco#!/"
+          target="_blank"
+          style="color: #e07451"
+          ><i class="fas fa-chart-line fa-2x"></i
+        ></a>
+        <p>Copyright &copy; 2020, Renato Barroco, All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- JQuery CDN -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Local JS File -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
