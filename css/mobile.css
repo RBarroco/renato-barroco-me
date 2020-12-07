@@ -83,12 +83,12 @@
   }
 
   #project-projects {
-    height: 1200vh;
+    height: auto;
   }
 
   /* Experience mobile */
   #project-experience {
-    height: 2500vw;
+    height: auto;
   }
 
   .grid-experience {
@@ -102,7 +102,7 @@
   }
 
   #project-skills {
-    height: 600vh;
+    height: auto;
   }
 
   #project-skills .grid-skills .grid-item .skills-2 {
@@ -112,7 +112,7 @@
 
   /* About-me mobile */
   #project-about-me {
-    height: 490vh;
+    height: auto;
   }
 
   .about-me {
