@@ -63,6 +63,10 @@ ul {
   color: #444;
 }
 
+.text-third {
+  color: #157085;
+}
+
 .bg-light {
   background: #f4f4f4;
   color: #333;
@@ -170,7 +174,6 @@ ul {
 }
 
 #navbar ul li a:hover {
-  /* background: #e07451; */
   color: #e07451;
   border-radius: 5px;
 }
@@ -191,19 +194,16 @@ ul {
   align-items: center;
   height: 100%;
   padding: 0 2rem;
-  /* Overlay */
   position: absolute;
   top: 65px;
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
 /* Section: What We Do */
 #what .items {
   display: flex;
-  /* padding: 0.5rem; */
 }
 
 #what .items .item {
@@ -250,27 +250,52 @@ ul {
 }
 
 #project-about-me {
-  height: 130vw;
+  height: auto;
 }
 
 #project-skills {
-  height: 220vw;
+  height: auto;
 }
 
 #project-experience {
-  height: 240vw;
+  height: auto;
 }
 
 #project-projects {
-  height: 200vw;
+  height: auto;
 }
 
 #projects-viewport {
-  height: 30vw;
+  height: auto;
+}
+
+/* Showcase */
+#showcase-2 {
+  background: black url('../img/data-science-contact-me.jpeg') no-repeat
+    center/cover;
+  height: 80vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
 /* Section: Contact */
-#contact {
+/* #contact {
   display: flex;
 }
 
@@ -281,6 +306,8 @@ ul {
 
 #contact .map {
   background: url('../img/data-science-contact-me.jpeg') no-repeat center/cover;
+  height: 700;
+  width: auto;
 }
 
 #contact .contact-form .form-group {
@@ -296,7 +323,7 @@ ul {
   width: 100%;
   padding: 0.5rem;
   font-family: roboto;
-}
+} */
 
 /*Skills*/
 .grid-skills {
