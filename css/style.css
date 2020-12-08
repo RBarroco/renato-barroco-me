@@ -50,8 +50,7 @@ ul {
   width: 100vw;
 }
 
-.text-center,
-.what-img {
+.text-center {
   text-align: center;
 }
 
@@ -217,6 +216,12 @@ ul {
   padding: 1rem;
   border-radius: 50%;
   margin-bottom: 1rem;
+}
+
+.what-img {
+  width: 100%;
+  height: auto;
+  text-align: center;
 }
 
 /* Section: Who We Are */

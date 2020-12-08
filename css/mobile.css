@@ -115,9 +115,11 @@
     height: auto;
   }
 
-  .about-me {
+  .about-me,
+  .what-img {
     width: 100%;
     height: auto;
+    text-align: center;
   }
 
   .grid-projects {
