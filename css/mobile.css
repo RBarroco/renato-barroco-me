@@ -17,7 +17,7 @@
 }
 
 /* Smartphones */
-@media (max-width: 500px) {
+@media (max-width: 550px) {
   .l-heading {
     font-size: 3rem;
     margin-bottom: 0.75rem;
