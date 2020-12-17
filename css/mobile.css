@@ -116,7 +116,8 @@
   }
 
   .about-me,
-  .what-img {
+  .what-img,
+  .logo-front {
     width: 100%;
     height: auto;
     text-align: center;
