@@ -23,8 +23,8 @@ body {
 }
 
 a {
+  color: #444;
   text-decoration: none;
-  color: black;
 }
 
 p {
@@ -35,38 +35,55 @@ ul {
   margin: 0 1.5rem;
 }
 
+.color-orange {
+  color: #e07451;
+}
+
 /* Utility Classes */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 2rem;
+  overflow: hidden;
+}
+
+.container-skills {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  padding: 0 2rem;
+  width: 100vw;
+}
 
 .text-center {
   text-align: center;
 }
 
 .text-primary {
-  color: black;
-}
-
-.text-secondary {
   color: #25395c;
 }
 
-.text-third {
+.text-secondary {
   color: #5d687f;
-  text-align: center;
+}
+
+.text-third {
+  color: #a1aeb9;
 }
 
 .bg-light {
   background: #f4f4f4;
-  color: #5d687f;
+  color: #333;
 }
 
 .bg-dark {
-  background: #353535;
-  color: #f4f4f4;
+  background: #333;
+  color: #fff;
 }
 
 .bg-primary {
-  background: #25395c;
-  color: #f4f4f4;
+  background: #e07451;
+  color: #fff;
 }
 
 .l-heading {
@@ -77,18 +94,6 @@ ul {
 
 .m-heading {
   font-size: 2rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
-}
-
-.mm-heading {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-  line-height: 1.1;
-}
-
-.s-heading {
-  font-size: 1.3rem;
   margin-bottom: 0.75rem;
   line-height: 1.1;
 }
@@ -119,146 +124,239 @@ ul {
 }
 
 .btn {
-  display: block;
-  width: 100%;
-  color: white;
-  background: #25395c;
+  display: inline-block;
+  color: black;
+  background: #e07451;
   padding: 0.5rem 2rem;
   border: none;
   border-radius: 5px;
-  left: 0;
-  bottom: 10px;
-  position: relative;
-  margin-top: 30px;
 }
 
 .btn:hover {
-  background: #5d687f;
+  background: #157085;
   color: #fff;
 }
 
-/*containers*/
-.container {
-  width: 100%;
-  overflow: hidden;
-  background: url('../img/tanner-boriack-nashville-ConvertImage.jpg') no-repeat
-    center center/cover;
-  height: 80vh;
-  color: #f4f4f4;
-  margin: auto;
+.btn-dark {
+  background: #444;
+  color: #fff;
+  margin: 0.75rem;
 }
 
-.container-text {
-  margin: auto;
-  padding: 30px;
+.list {
+  margin: 0.5rem 0;
+  list-style: none;
+}
+
+.list li {
+  padding: 0.5rem 0;
+  border-bottom: #444 dotted 1px;
+}
+
+/* Navbar */
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  color: #444;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  color: #444;
+  padding: 0.75rem;
+  margin: 0 0.25rem;
+}
+
+#navbar ul li a:hover {
+  color: #e07451;
+  border-radius: 5px;
+}
+
+/* Showcase */
+#showcase {
+  background: #333 url('../img/tanner-boriack-nashville-ConvertImage.jpg')
+    no-repeat center center/cover;
+  height: 80vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* Section: What We Do */
+#what .items {
+  display: flex;
+}
+
+#what .items .item {
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+#what .items .item i {
+  background: #e07451;
+  padding: 1rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.what-img {
+  width: 100%;
+  height: auto;
   text-align: center;
 }
 
-.container-footer {
-  width: 100%;
+/* Section: Who We Are */
+#who {
+  display: flex;
+}
+
+#who div {
+  flex: 1;
+}
+
+#who .who-img {
+  background: url('../img/renato-arvore-ConvertImage.jpg') no-repeat center
+    center/cover;
+}
+
+/* Section: Projects */
+#projects .items {
+  display: inline-block;
+}
+
+#projects .items img {
+  display: block;
+  margin: auto;
+  width: 60%;
+}
+
+#projects .container-elements {
+  display: flex;
+  justify-content: space-between;
+}
+
+#project-about-me {
+  height: auto;
+}
+
+#project-skills {
+  height: auto;
+}
+
+#project-experience {
+  height: auto;
+}
+
+#project-projects {
+  height: auto;
+}
+
+#projects-viewport {
+  height: auto;
+}
+
+/* Showcase */
+#showcase-2 {
+  background: black url('../img/data-science-contact-me-2.png') no-repeat
+    center/cover;
+  height: 80vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
   height: 100%;
-  color: #f4f4f4;
-}
-
-/*Timeline*/
-#timeline ul {
-  background: white;
-  padding: 50px 0;
-}
-
-/* Create Line */
-#timeline ul li {
-  list-style: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 50px;
-  color: black;
-  background: black;
-}
-
-/* Boxes */
-#timeline ul li div {
-  position: relative;
+  padding: 0 2rem;
+  /* Overlay */
+  position: absolute;
+  top: 65px;
+  left: 0;
+  right: 0;
   bottom: 0;
-  width: 400px;
-  padding: 1rem;
-  background: white;
-  transition: all 0.5s ease-in-out;
-  visibility: hidden;
-  opacity: 0;
+  /* background-color: rgba(0, 0, 0, 0.4); */
 }
 
-/* Right Side */
-#timeline ul li:nth-child(odd) div {
-  left: 40px;
-  transform: translate(200px, 0);
+/* Section: Contact */
+/* #contact {
+  display: flex;
 }
 
-/* Left Side */
-#timeline ul li:nth-child(even) div {
-  left: -434px;
-  transform: translate(-200px, 0);
+#contact .map,
+#contact .contact-form {
+  flex: 0.5;
 }
 
-/* Show Boxes */
-#timeline ul li.show div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
+#contact .map {
+  background: url('../img/data-science-contact-me.jpeg') no-repeat center/cover;
+  height: 700;
+  width: auto;
 }
 
-#timeline ul li.show:after {
-  background: white;
+#contact .contact-form .form-group {
+  margin: 0.75rem;
 }
 
-@media (max-width: 900px) {
-  #timeline ul li div {
-    width: 250px;
-  }
-
-  #timeline ul li:nth-child(even) div {
-    left: -284px;
-  }
-
-  .container-image {
-    margin: auto;
-    margin-top: 50px;
-    width: 55%;
-    height: 85%;
-    background: white;
-    opacity: 85%;
-    padding: 30px;
-    text-align: center;
-  }
+#contact .contact-form label {
+  display: block;
 }
 
-@media (max-width: 600px) {
-  #timeline ul li {
-    margin-left: 20px;
-  }
+#contact .contact-form input,
+#contact .contact-form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-family: roboto;
+} */
 
-  #timeline ul li div {
-    width: calc(100vw - 90px);
-  }
+/*Skills*/
+.grid-skills {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto auto;
+  grid-gap: 10px;
+  padding: 24px;
+}
 
-  #timeline ul li:nth-child(even) div {
-    left: 40px;
-  }
+.grid-experience {
+  display: grid;
+  justify-content: left;
+  grid-template-columns: auto auto;
+  grid-gap: 100px;
+  padding: 24px;
+}
 
-  #timeline ul li:nth-child(even) div:before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent white transparent transparent;
-  }
-  .container-image {
-    margin: auto;
-    margin-top: 50px;
-    width: 55%;
-    height: 85%;
-    background: white;
-    opacity: 85%;
-    padding: 30px;
-    text-align: center;
-  }
+/*Projects*/
+.grid-projects {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 100px;
+  padding-top: 100px;
 }
